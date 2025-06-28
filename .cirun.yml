@@ -1,0 +1,9 @@
+runners:
+  - name: gcp-cpu-runner
+    cloud: gcp
+    instance_type: n2-standard-8   # 8 vCPU + 32 GB RAM, bisa diubah sesuai kebutuhan
+    region: asia-southeast2        # lokasi GCP: Asia Tenggara
+    machine_image: ubuntu-2204-lts  # sistem operasi runner
+    preemptible: false             # true untuk spot, biaya lebih murah
+    labels:
+      - cirun-gcp
